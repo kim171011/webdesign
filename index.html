@@ -7,18 +7,31 @@
 .main{
 width:50px;
 height:30px;
-border:1px solid gery;
+border:1px solid grey;
 backgroud:grey;
 }
+  .sub{
+  display:none;
+  }
+  .main:hover ul{
+  display:block;
+  }
+  .sub{
+  position:absolute;
+    width:50px;
+height:auto;
+border:1px solid grey;
+backgroud:grey;
+  }
 </style>
 </head>
 <body>
-<div class="main">
-<ul>
-<li class="sub1">a</li>
-<li class="sub2">b</li>
-<li class="sub3">c</li>
+  <nav class="main"><a href="#">aps</a>
+<ul class="sub">
+<li class="sub1"><a href="#">a</a></li>
+<li class="sub2"><a href="#">b</a></li>
+<li class="sub3"><a href="#">c</a></li>
 </ul>
-</div>
+</nav>
 </body>
 </html>
